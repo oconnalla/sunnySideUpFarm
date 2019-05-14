@@ -5,17 +5,18 @@ body{
     font-family: sans-serif;
 }
 #landingContainer{
-height:100%;
-width:100%;
-display:flex;
-flex-direction: column;
-align-items: center;
-margin:5%;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5%;
 } 
-#navAndLogoCOntainer{
+#navAndLogoContainer{
     display:flex;
     width:100%;
     justify-content: space-between;
+    align-items: center;
 }
 #goatCover{
     margin-bottom:5%;
@@ -23,10 +24,66 @@ margin:5%;
 }
 #landingContainerTop{
     display:Flex;
-    /* flex-direction:column; */
     width:100%;
     margin-bottom:5%;
 }
+
+/* Navbar section Below */
+
+.navbar {
+    display:flex;
+    width:50%;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    white-space: nowrap;
+    font-size: 1.25em;
+    padding:.75%;
+  } 
+
+  /* Gives <a> element text color and removes underline */
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding:.5em;
+  }
+
+  /* Removes premade styling from button, sizes & colors the text*/
+  .dropbtn{
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: black;
+    padding:.5em;
+  }
+  /* Makes is so that when all items (except the dropdown a elements) change color when hovered over */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgba(48, 147, 61, 0.803);
+    background-color: whitesmoke;
+  }
+  
+  /* Hides dropdown menu until it's hovered over & prevents subnav from moving the whole nav bar spacing  */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 253, 253);
+  }
+  /* When it hovers the text and background change color */
+  .dropdown-content a:hover {
+    background-color: green;
+    color:white;
+  }
+
+  /* Allows the drop down menu to be visible when hovered over  */
+  .dropdown:hover .dropdown-content {
+    display:flex;
+    flex-direction:column;
+  } 
+
+  /* End of Nav Bar CSS */
+
+
 #landingSubContainer1{
     display:flex;
     width:50%;
@@ -88,13 +145,17 @@ margin:5%;
     font-weight: lighter;
 }
 .socialMediaImages{
-max-width:200px;
-max-height:200px;
+    max-width:200px;
+    max-height:200px;
 }
 #socialMediaContainer{
     display: flex;
     width:100%;
     justify-content: space-between;
+}
+div + p{
+    font-weight: bolder;
+    margin: 5% auto 2.5% auto;
 }
 hr.bottomLine{
     width:100%;
