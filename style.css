@@ -50,33 +50,33 @@ body{
   }
 
   /* Removes premade styling from button, sizes & colors the text*/
-  .dropbtn{
+  .dropButton{
     font-size: 1em;
     border: none;
     outline: none;
     color: black;
-    padding:.5em;
+    padding:.5em 1.25em;
   }
   /* Makes is so that when all items (except the dropdown a elements) change color when hovered over */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover, .dropdown:hover .dropButton {
     color: rgba(48, 147, 61, 0.803);
     background-color: whitesmoke;
   }
   
   /* Hides dropdown menu until it's hovered over & prevents subnav from moving the whole nav bar spacing  */
-  .dropdown-content {
+  .dropdownContent {
     display: none;
     position: absolute;
     background-color: rgb(255, 253, 253);
   }
   /* When it hovers the text and background change color */
-  .dropdown-content a:hover {
+  .dropdownContent a:hover {
     background-color: green;
     color:white;
   }
 
   /* Allows the drop down menu to be visible when hovered over  */
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdownContent {
     display:flex;
     flex-direction:column;
   } 
