@@ -49,7 +49,7 @@ body{
     padding:.5em;
   }
 
-  /* Removes premade styling from button, sizes & colors the text*/
+  /* Removes premade styling and resizes button, sizes & colors the text*/
   .dropButton{
     font-size: 1em;
     border: none;
@@ -87,7 +87,7 @@ body{
 #landingSubContainer1{
     display:flex;
     width:50%;
-    background-image: url('images/fakeGoat1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat1.jpg');
     background-position: center;
     background-size:cover;
     margin-right:2.5%;
@@ -98,7 +98,7 @@ body{
 #landingSubContainer2{
     display:flex;
     width:50%;
-    background-image: url('images/fakeGoat2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat2.jpg');
     background-position: center;
     background-size:cover;
     margin-left:2.5%;
@@ -113,7 +113,7 @@ body{
 #landingSubContainer3{
     display:flex;
     width:50%;
-    background-image: url('images/fakeGoat3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat3.jpg');
     background-position: center;
     background-size:cover;
     margin-right:2.5%;
@@ -124,13 +124,17 @@ body{
 #landingSubContainer4{
     display:flex;
     width:50%;
-    background-image: url('images/fakeGoat4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat4.jpg');
     background-position: center;
     background-size:cover;
     margin-left:2.5%;
     flex-direction:column;
     justify-content:center;
-    align-items: center; 
+    align-items: center;
+}
+#landingSubContainer4 a{
+    text-decoration:none;
+    text-align: center; 
 }
 .landingFont1, .landingFont2{
     color: white;
@@ -138,12 +142,15 @@ body{
 .landingFont1{
     margin-top:25%;
     margin-bottom:0;
+    font-size:2.25em;
 }
 .landingFont2{
     margin-top:0;
     margin-bottom:25%;
     font-weight: lighter;
+    font-size:1.25em;
 }
+
 .socialMediaImages{
     max-width:200px;
     max-height:200px;
@@ -153,12 +160,179 @@ body{
     width:100%;
     justify-content: space-between;
 }
-div + p{
+/* div + p{
     font-weight: bolder;
     margin: 5% auto 2.5% auto;
+} */
+p  a{
+    text-decoration: none;
+    color:green;
+    font-size:2em;
+}
+p  a:hover{
+    color:grey;
 }
 hr.bottomLine{
     width:100%;
     border-top: 1px solid green;
     margin-top:5%;
+}
+footer{
+    display:flex;
+    /* flex-wrap:wrap; */
+    width:100%;
+    /* justify-content:space-between; */
+    color:green;
+    font-size:1.2em;
+    margin-top:2%;
+    align-items:center;
+}
+footer p{
+    margin-left:3%;
+    padding:0; 
+    min-width:60%;
+}
+footer  a{
+    width:100%;
+    text-decoration:none;
+    color:green;
+    font-size:.75em;
+    margin-left:1%;
+}
+footer  a:hover{
+    color:rgb(211, 211, 211);
+}
+footer  a:first-of-type{
+    margin-left:0;
+}
+footer  a:last-of-type{
+    margin-right:2%;
+}
+a img{
+    opacity: .4;
+    height:5%;
+    border-radius:50%;
+}
+
+/* CONTACT US PAGE CSS */
+/* controls image background behind form */
+div + img + h1{
+    text-align:center;
+    margin-bottom:0;
+}
+img + h1 + p{
+    color:darkgreen;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+#formBackground{
+    margin-top:5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fakeGoat4.jpg");
+    padding:10%;
+    width:75%;
+    border:10px double rgba(211, 211, 211, 0.2);
+}
+/* controls background and orientation of form */
+#formContainer{
+    background-image:linear-gradient(rgb(58, 58, 58), rgb(94, 94, 94));
+    padding:2.5% 5%;
+    color:whitesmoke;
+    border:5px double rgba(44, 63, 44, 0.5);
+    font-weight: lighter;
+}
+
+/* controls "question?" at top of form */
+div > h1{
+    color:green;
+    font-weight:lighter;
+}
+/* controls "we'd love to hear from you" message */
+h1 + h5{
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin:0%;
+}
+/* controls comments organization */
+#commentsDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* controls comments label */
+label{
+    display:block;
+    margin-top:6%;
+    color:green;
+    font-size:1.5em;
+}
+input[type^="text"], input[type^="email"]{
+    width:70%;
+    height:2em;
+}
+textarea{
+    margin-top:2%;
+    width:70%;
+    height:14em;
+}
+/* controls submit "button" */
+input[type^="submit"]{
+    margin:5% auto 2.5% 0%;
+    color:white;
+    background-color:green;
+    padding:1% 2.5%;
+    font-size:1.25em;
+    border:none;
+}
+
+
+
+/* ABOUT PAGE CSS */
+#aboutGoatBackground{
+    width:90%;
+    padding:5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("images/fakeGoat4.jpg");
+}
+    
+#aboutGoatBackground img{
+    width:50%;
+}
+.aboutSubContainer{
+    display:flex;
+    flex-direction: row;
+    align-items:stretch;
+    overflow: scroll;
+}
+.aboutSubContainer img{
+    height:100%;
+}
+div + img + div > h2{
+ color:darkgreen;
+ font-size: 2.5em;
+ text-align:center;
+ padding:4%;
+ background-color:rgba(250,250,250,.7);
+ text-transform: uppercase;
+}
+div + img + div > h2:not(:first-child){
+margin-top:15%;
+}
+img ~ p{
+    color:whitesmoke;
+    margin: 0% 0% 0% 5%;
+    font-size: 1.2em;
+    line-height:2;
+    padding:2.5%;
+    background-color:rgba(250,250,250,.1);
+    text-align: center;
+}
+h2 + p{
+    color:whitesmoke;
+    margin: 0% 0% 5% 0%;
+    font-size: 2em;
+    line-height:2;
+    text-align:center;
+    background-color:rgba(250,250,250,.1);
+    padding: 5% 0% 5% 0%;
+    font-weight:lighter;
 }
