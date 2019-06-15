@@ -56,6 +56,7 @@ body{
     outline: none;
     color: black;
     padding:.5em 1.25em;
+    background:white;
   }
   /* Makes is so that when all items (except the dropdown a elements) change color when hovered over */
   .navbar a:hover, .dropdown:hover .dropButton {
@@ -87,7 +88,7 @@ body{
 #landingSubContainer1{
     display:flex;
     width:50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/fakeGoat1.jpg');
     background-position: center;
     background-size:cover;
     margin-right:2.5%;
@@ -98,7 +99,7 @@ body{
 #landingSubContainer2{
     display:flex;
     width:50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/fakeGoat2.jpg');
     background-position: center;
     background-size:cover;
     margin-left:2.5%;
@@ -113,7 +114,7 @@ body{
 #landingSubContainer3{
     display:flex;
     width:50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/fakeGoat3.jpg');
     background-position: center;
     background-size:cover;
     margin-right:2.5%;
@@ -124,7 +125,7 @@ body{
 #landingSubContainer4{
     display:flex;
     width:50%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('images/fakeGoat4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/fakeGoat4.jpg');
     background-position: center;
     background-size:cover;
     margin-left:2.5%;
