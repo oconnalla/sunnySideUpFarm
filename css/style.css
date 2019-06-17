@@ -19,14 +19,36 @@ body{
     align-items: center;
 }
 #goatCover{
-    margin-bottom:5%;
-    max-width:100%;
-}
-#landingContainerTop{
-    display:Flex;
     width:100%;
+    height:50%;
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center; 
+    color:whitesmoke;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('../images/fakeGoat5.jpg');
+    padding-bottom:5%;
+    padding-top:10%;
     margin-bottom:5%;
 }
+ .bannerTitle {
+    font-size: 5rem;
+    font-weight:lighter;
+    margin:0%;
+ }
+ #subBannerTitle a{
+     text-decoration:none;
+     color:white;
+ }
+  #subBannerTitle{
+       padding:1%;
+  }
+ #subBannerTitle:hover{
+    background-color:darkgreen;
+ }
 
 /* Navbar section Below */
 
@@ -84,6 +106,12 @@ body{
 
   /* End of Nav Bar CSS */
 
+#landingContainerTop{
+    display:Flex;
+    width:100%;
+    margin-bottom:5%;
+}
+
 
 #landingSubContainer1{
     display:flex;
@@ -105,7 +133,7 @@ body{
     margin-left:2.5%;
     flex-direction:column;
     justify-content:center;
-    align-items: center;   
+    align-items: center;  
 }
 #landingContainerBottom{
     display:Flex;
@@ -133,9 +161,33 @@ body{
     justify-content:center;
     align-items: center;
 }
+#landingSubContainer1 a{
+    text-decoration:none;
+    text-align: center;
+    padding-bottom:2%;
+    width:30%;
+    margin-bottom:25%; 
+}
+#landingSubContainer2 a{
+    text-decoration:none;
+    text-align: center;
+    padding-bottom:2%;
+    width:30%;
+    margin-bottom:25%; 
+}
+#landingSubContainer3 a{
+    text-decoration:none;
+    text-align: center;
+    padding-bottom:2%;
+    width:30%;
+    margin-bottom:25%;  
+}
 #landingSubContainer4 a{
     text-decoration:none;
-    text-align: center; 
+    text-align: center;
+    padding-bottom:2%;
+    width:30%;
+    margin-bottom:25%;  
 }
 .landingFont1, .landingFont2{
     color: white;
@@ -147,7 +199,7 @@ body{
 }
 .landingFont2{
     margin-top:0.5%;
-    margin-bottom:25%;
+
     font-weight: lighter;
     font-size:1.25em;
     background-color:rgba(55, 55, 55, 0.6);
@@ -239,7 +291,7 @@ img + h1 + p{
 }
 #formBackground{
     margin-top:5%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fakeGoat4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fakeGoat4.jpg");
     padding:10%;
     width:75%;
     border:10px double rgba(211, 211, 211, 0.2);
@@ -302,7 +354,7 @@ input[type^="submit"]{
 #aboutGoatBackground{
     width:90%;
     padding:5%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("images/fakeGoat4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../images/fakeGoat4.jpg");
 }
     
 #aboutGoatBackground img{
@@ -354,4 +406,212 @@ h2 + p{
     padding: 5% 0% 5% 0%;
     font-weight:lighter;
     border:1px solid rgba(255, 217, 0, 0.4);
+}
+
+/* Controls the contact page form */
+form{
+    display:flex;
+    width:95%;
+    flex-direction:column;
+    background-color:white;
+    border:6px double green;
+    padding:2%;
+}
+label{
+    color:darkgreen;
+    font-size:1.25em;
+}
+input{
+    background-color:lightgrey;
+    color:white;
+    padding:.5%;
+}
+legend{
+    color:darkgreen;
+}
+fieldset{
+    margin-top:5%;
+    /* max-width:85%; */
+}
+select{
+   border: 1px solid green;
+   padding:.5%;
+}
+::placeholder{
+    font-size:1.5em;
+}
+input:enabled[type="submit"]{
+    background-color:green;
+    color:white;
+    padding:.5% 2%;
+    font-size:1.5em;
+}
+input:enabled[type="submit"]:hover{
+   color:lightgrey;
+}
+#FarmLogo{
+    opacity: 1;
+}
+/* Controls the hamburger Icon */
+.hamburgerContainer{
+    display:none;
+}
+
+/* CSS FOR MOBILE */
+/* make the whole container view width */
+@media only screen and (max-width: 600px) {
+    body{
+        display:flex;
+    }
+    #landingContainer{
+        width:100vw;
+        margin:0;
+    }
+    /* affect the nav and logo */
+   #navAndLogoContainer{
+    display:flex;
+    width:100vw;
+    flex-direction: column;
+    justify-content: center;
+}
+/* controls top banner main text */
+.bannerTitle{
+    font-size:2.5em;
+    text-align:center;
+     background-color:rgba(0, 128, 0, 0.6);
+}
+.landingFont2{
+    width:100%;
+    margin:0;
+    padding:5%;
+}
+/* make the nav list items stack*/
+.navbar{
+    display:flex;
+    flex-direction:column;
+}
+/* make the top 2 image links stack */
+#landingContainerTop{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+/* make the 1st image link full size */
+#landingSubContainer1{
+    width:100%;
+    margin:0
+}
+/* make the 2st image link full size */
+#landingSubContainer2{
+    width:100%;
+    margin:5% 0% 0% 0%;
+}
+/* make the bottom 2 image links stack */
+#landingContainerBottom{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+/* make the 3rd image link full size */
+#landingSubContainer3{
+    width:100%;
+    margin:0;
+}
+/* make the 4th image link full size */
+#landingSubContainer4{
+    width:100%;
+    margin:5% 0% 0% 0%;
+}
+/* make the social media images stack */
+#socialMediaContainer {
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    background-image:radial-gradient(white,lightgrey);
+}
+/* give the individual social media images space*/
+.socialMediaImages{
+    width:100%;
+    margin:auto;
+    margin-top:5%;
+    }
+/* give the last social media images space below*/
+.socialMediaImages:last-of-type{
+margin-bottom:5%;
+}
+/* controls the facebook link*/
+    div + div + p a{
+        text-align:center;
+    }
+/* Controls the footer*/
+footer{
+    display:flex;
+    flex-direction:column;
+    background-color:rgba(0, 128, 0, 0.247);
+}
+/* Controls the middle footer a*/
+footer a{
+    margin-left:1%;
+}
+/* Controls the 1st footer a*/
+footer a:first-of-type{
+    margin:0% 0% 0% 1%;
+}
+/* Controls the last footer a*/
+footer a:last-of-type{
+    margin:0% 0% 0% 1%;
+}
+/* Controls the last footer valid checkers*/
+.footerValid{
+    background-color:rgba(0, 128, 0, 0.247);
+    width:99%;
+    color:white;
+    padding-top:1%;
+    padding-left:1%;
+    text-decoration:none;
+
+}
+/* Controls the hamburger icon*/
+.hamburgerContainer {
+  display:inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.aboutSubContainer{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content:center;
+}
+.aboutSubContainer img{
+    width:100%;
+    height:50vw;
+    margin:auto;
+    margin-bottom:10%;
+}
+div + img + div > h2{
+    font-size:1.5em;
+}
+div + img + div > h2:first-of-type{
+    font-size:1em;
+}
 }

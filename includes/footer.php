@@ -1,6 +1,6 @@
 <hr class="bottomLine">
-            <footer><footer>
-                    <p>&copy; Mock Copyright 2019, Ariel OConnall, All Rights Reserved </p>
+            <footer>
+                   
                     <a href="https://m.facebook.com/terramer.farms">
                     <img class="socialMediaIcons" src="images/fb-icon.png" alt="Facebook">
                     Facebook</a>
@@ -10,8 +10,9 @@
                     Instagram</a>
                     
                     <a href="contact.html"><img class="socialMediaIcons" src="images/mail-icon.png" alt="email"> Contact Us</a>
-                </footer></footer>
-                <a href="http://validator.w3.org/check?uri=referer" target="_blank"> Valid HTML </a> ~ 
+                </footer>
+                <small class="footerValid">&copy; <?php echo date("Y");?>, Ariel OConnall, All Rights Reserved<br>
+                <a href="http://validator.w3.org/check?uri=referer" target="_blank"> Valid HTML </a><br>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"> Valid CSS </a>
         </div>
     </body>
